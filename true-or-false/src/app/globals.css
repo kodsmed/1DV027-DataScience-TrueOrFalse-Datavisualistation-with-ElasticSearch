@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  color:black;
+}
+
+body {
+  height: calc(100%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(var(--foreground-rgb));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
